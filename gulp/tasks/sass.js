@@ -32,7 +32,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('sass:watch', function() {
-    gulp.watch(config.src.sass + '/**/*.{sass,scss}', function(){ runSequence('sass', 'nunjucks','inlinecss')});
+    gulp.watch(config.src.sass + '/**/*.{sass,scss}', function(){ runSequence('sass', 'nunjucks')});
 });
 
 function isMax(mq) {

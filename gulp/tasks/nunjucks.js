@@ -47,9 +47,9 @@ gulp.task('nunjucks:changed', function() {
 gulp.task('nunjucks:watch', function() {
     gulp.watch([
         config.src.templates + '/**/[^_]*.html'
-    ], ['nunjucks:changed','inlinecss']);
+    ], ['nunjucks:changed']);
 
     gulp.watch([
         config.src.templates + '/**/_*.html'
-    ], ['nunjucks','inlinecss']);
+    ], ['nunjucks']);
 });
