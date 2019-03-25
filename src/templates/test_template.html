@@ -1,0 +1,67 @@
+---
+title: mail_2
+css: main.css
+link: #
+
+bg: '#fff'
+width: 600px
+
+title_top: Подьверждение!
+
+text_body_top: BitUP.io - это платформа инвестиционных возможностей. Теперь вам не нужно проводить обзор большого количества предложений и заказывать дорогостоящие услуги финансовых аналитиков. Получать стабильный пассивный доход от ваших сбережений, теперь можно анонимно и безопасно в валюте нового поколения - Bitcoin. 
+
+text_body_bot: Вы получили это письмо, потому что подписались на рассылкуна нашем сайте. Если вы больше не хотите получать рассылку, 
+
+---
+{% extends "layouts/_layout_2.html" %}
+
+{% block content %}
+
+	<tr>
+		<td align="left" valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 0;border: 0;height: 100% !important; padding: 0 30px 48px;line-height: 1.45; background: #fff;">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 0;">
+				<tr>
+					<td align="center" valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 35px 0 17px;border: 0;height: 100% !important;">
+						<div style="margin: 0;padding: 0;border: 0; font-size: 30px; font-weight: 100;color: #000;">{{ title_top }}</div>
+					</td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 0;border: 0;height: 100% !important;line-height: 1.9;">
+						<div style="margin: 0;padding: 0;border: 0;">
+							{{text_body_top}}
+							<a href="{{link}}" style="color: #3488df; text-decoration: none;">Подробнее <span style="display: inline-block;vertical-align: top; margin: 0 0 0 8px;">&#8250;</span></a>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 45px 0 0;border: 0;height: 100% !important; color: #7f7f7f; font-size: 12px; font-weight: 100;">
+						<div style="margin: 0; padding: 0;">Ваш персональный номер</div>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 15px 0 0;border: 0;height: 100% !important; color: #000; font-size: 30px; line-height: 1;">
+						<div style="margin: 0; padding: 0;">25FDv74dC844vfd84C88v8</div>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" valign="top"  style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 15px 105px 0;border: 0;height: 100% !important; color: #7f7f7f; font-size: 12px; font-weight: 100;">
+						<div style="margin: 0; padding: 0;">* Никому не передавайте этот персональный номер. Номер будет удален через 24 часа.</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 0;border-top: 1px solid #e5e5e5;height: 100% !important; padding: 34px 68px; line-height: 1.45;">
+			<table>
+				<tr>
+					<td align="center" valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 0;border: 0;height: 100% !important; font-weight: 100; font-size: 12px;">
+						{{text_body_bot}}
+						<a href="{{link}}" style="color: #3488df; text-decoration: none;">нажмите здесь. </a>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+{% endblock %} 

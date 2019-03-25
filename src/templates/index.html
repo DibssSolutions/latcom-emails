@@ -1,0 +1,97 @@
+---
+title: mail_1
+css: main.css
+link: #
+
+bg: '#f1f1f1'
+max-width: 600px
+width: 100%
+
+title_top: Была обнаружена тревога по объектам
+
+item_1: Honda(CV-V)
+item_1_date: 15.01.2019 12:12:00
+
+text_body_bot: Вы получили это письмо, потому что подписались на рассылкуна нашем сайте. Если вы больше не хотите получать рассылку, 
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	<tr>
+		<td align="left" valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;border: 0;height: 100% !important; padding: 0 5% 30px;line-height: 1.45; background: #fff;">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0 auto;padding: 0;max-width:520px;">
+				<tr>
+					<td align="left" valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 30px 0 0;border: 0;height: 100% !important;">
+						<div style="margin: 0;padding: 0;border: 0; font-size: 24px;">{{ title_top }}:</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;border: 0;height: 100% !important; padding: 0 5%;line-height: 1.2; background: #fff;">
+			<table cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0 auto;padding: 0;border-top: 1px solid;border-bottom: 1px solid;border-color: #dfdfdf;max-width:520px;">
+				<tr>
+					<td align="left" valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 0;border: 0;height: 100% !important; padding: 20px 0 30px; background: #fff;">
+						<div style="font-size: 18px;">
+							{{ item_1 }}
+						</div>
+						<div style="margin-top:5px;">
+							{{ item_1_date }}
+						</div>
+						<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 7px 0 0;padding: 0;background-color:#eaf1f9">
+							<tr>
+								<td align="left" valign="top" style="padding:0 20px 20px;text-align:justify;text-align-last:justify;">
+									<span style="display:inline-block;min-width: 200px;padding:20px 10px 0 0;font-size:16px;text-align-last:left;">
+										Вход в зону CheckPoint2
+									</span>
+									<a href="#" style="display:inline-block;padding-top:20px;color:#2471be;align-self:end;">
+										Показать на карте
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;border: 0;height: 100% !important; padding: 0 5%;line-height: 1.2; background: #fff;">
+			<table cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0 auto;padding: 0;border-bottom: 1px solid;border-color: #dfdfdf;max-width:520px;">
+				<tr>
+					<td align="left" valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 0;border: 0;height: 100% !important; padding: 20px 0 30px; background: #fff;">
+						<div style="font-size: 18px;">
+							{{ item_1 }}
+						</div>
+						<div style="margin-top:5px;">
+							{{ item_1_date }}
+						</div>
+						<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 7px 0 0;padding: 0;background-color:#eaf1f9">
+							<tr>
+								<td align="justify" valign="top" style="padding:0 20px 20px;text-align:justify;text-align-last:justify;">
+									<span style="display:inline-block;min-width: 200px;padding:20px 10px 0 0;font-size:16px;text-align-last:left;">
+										Вход в зону CheckPoint2
+									</span>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 30px 5% 0;border: 0;height: 100% !important;">
+				<table cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0 auto;padding: 0;max-width:520px;">
+					<tr>
+						<td>
+			<a href="{{link}}" style="display: inline-block; padding: 15px 40px;text-decoration: none; color: #fff; background-color:#f7941e; font-size: 16px;">Перейти в сервис</a>
+		</td>
+		</tr>
+			</table>
+		</td>
+	</tr>
+{% endblock %} 
